@@ -2,6 +2,7 @@ package Tests;
 
 import Pages.HomePage;
 import Pages.LoginPage;
+import io.qameta.allure.Description;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -18,6 +19,7 @@ public class LoginTest extends BaseTest{
     }
 
     @Test
+    @Description("LoginUsingNonRegisteredEmail")
     public void LoginUsingNonRegisteredEmail(){
         homePage.HoverOnAccountAndList();
         homePage.clickOnSignInButton();

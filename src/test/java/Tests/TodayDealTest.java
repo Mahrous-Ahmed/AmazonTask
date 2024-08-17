@@ -2,6 +2,7 @@ package Tests;
 
 import Pages.HomePage;
 import Pages.TodayDealPage;
+import io.qameta.allure.Description;
 import io.qameta.allure.Step;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -18,7 +19,8 @@ public class TodayDealTest extends BaseTest{
     }
 
     @Test
-    public void SelectSecondCategory(){
+    @Description("Verify that Items are added to cart correctly")
+    public void VerifItemsInCart(){
         todayDealPage.clickOnSpecificCategory();
         todayDealPage.clickOnSpecificProduct();
         todayDealPage.clickOnSpecificItem();

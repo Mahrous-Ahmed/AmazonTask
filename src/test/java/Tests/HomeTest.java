@@ -1,6 +1,7 @@
 package Tests;
 
 import Pages.HomePage;
+import io.qameta.allure.Description;
 import io.qameta.allure.Step;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -15,7 +16,7 @@ public class HomeTest extends BaseTest {
         homePage = new HomePage(driver);
     }
 
-    @Step("Select Today Deal From All Tab")
+    @Description("Select Today Deal From All Tab")
     @Test
     public void SelectTodayDealFromAllTab() {
         homePage.clickOnAllTab();
